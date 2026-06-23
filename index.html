@@ -4,79 +4,179 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sourabh Katariya | HR Portfolio</title>
+
 <style>
-body{margin:0;font-family:Arial,sans-serif;background:#0b0b0b;color:#fff}
-header{padding:40px;text-align:center;background:#111;border-bottom:2px solid #d4af37}
-h1{color:#d4af37;margin:0}
-.container{max-width:1200px;margin:auto;padding:20px}
-.hero,.stats,.skills,.exp{margin-top:25px}
-.card{background:#151515;border:1px solid #d4af37;border-radius:12px;padding:20px;margin:10px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
-.skills span{display:inline-block;background:#d4af37;color:#000;padding:8px 12px;border-radius:20px;margin:5px;font-weight:bold}
-.btn{display:inline-block;padding:12px 20px;background:#d4af37;color:#000;text-decoration:none;border-radius:8px;margin:5px}
-footer{text-align:center;padding:20px;margin-top:30px;border-top:1px solid #d4af37}
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f5f7fb;
+    color:#222;
+}
+
+/* Header */
+header{
+    text-align:center;
+    padding:50px 20px;
+    background:white;
+    border-bottom:3px solid #d4af37;
+}
+
+h1{margin:0;color:#111;font-size:36px}
+h3{margin:10px 0;color:#555}
+
+/* Buttons */
+.btn{
+    display:inline-block;
+    padding:10px 16px;
+    margin:5px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    border:2px solid #d4af37;
+    color:#111;
+    background:white;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#d4af37;
+    color:#000;
+}
+
+/* Nav buttons */
+.nav{
+    margin-top:15px;
+}
+
+/* Container */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
+}
+
+/* Cards */
+.card{
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    border-left:5px solid #d4af37;
+}
+
+/* Stats */
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+}
+
+.stats .card{
+    text-align:center;
+}
+
+/* Skills */
+.skills span{
+    display:inline-block;
+    background:#d4af37;
+    color:#000;
+    padding:8px 12px;
+    border-radius:20px;
+    margin:5px;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    background:white;
+    border-top:2px solid #d4af37;
+}
 </style>
+
 </head>
+
 <body>
+
 <header>
-<h1>Sourabh Katariya</h1>
-<h3>Assistant Deputy Manager – HR</h3>
-<p>10+ Years Experience | Talent Acquisition | HR Operations | Employee Relations</p>
-<a class="btn" href="#">Download Resume</a>
-<a class="btn" href="https://www.linkedin.com/in/sourabh-kataria-4bb9b86b/">LinkedIn</a>
+    <h1>Sourabh Katariya</h1>
+    <h3>Assistant Deputy Manager – HR</h3>
+    <p>10+ Years Experience | Talent Acquisition | HR Operations | Employee Relations</p>
+
+    <!-- Buttons -->
+    <div class="nav">
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="#education">Education</a>
+        <a class="btn" href="#experience">Experience</a>
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn" href="#">Download Resume</a>
+        <a class="btn" href="https://www.linkedin.com/in/sourabh-kataria-4bb9b86b/">LinkedIn</a>
+    </div>
 </header>
 
-
-
 <div class="container">
-<div class="hero card">
-<h2>About Me</h2>
-<p>Results-driven HR professional with 10+ years of experience across Talent Acquisition, HR Operations, Employee Relations, Compliance, Shared Services and Workforce Planning.</p>
+
+    <!-- About -->
+    <div id="about" class="card">
+        <h2>About Me</h2>
+        <p>
+            Results-driven HR professional with 10+ years of experience across Talent Acquisition,
+            HR Operations, Employee Relations, Compliance, Shared Services and Workforce Planning.
+        </p>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats">
+        <div class="card"><h2>10+</h2><p>Years Experience</p></div>
+        <div class="card"><h2>5000+</h2><p>Interviews Conducted</p></div>
+        <div class="card"><h2>1000+</h2><p>Hires Managed</p></div>
+        <div class="card"><h2>95%+</h2><p>Joining Ratio</p></div>
+    </div>
+
+    <!-- Skills -->
+    <div class="card">
+        <h2>Core Skills</h2>
+        <div class="skills">
+            <span>Talent Acquisition</span>
+            <span>HR Operations</span>
+            <span>Employee Relations</span>
+            <span>Compliance</span>
+            <span>Workforce Planning</span>
+            <span>MIS & Analytics</span>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div id="experience" class="card">
+        <h2>Professional Experience</h2>
+        <p><b>Mahendra Next Wealth</b> – AD Manager HR (2023–Present)</p>
+        <p><b>Jumio India Pvt Ltd</b> – Team Leader HR (2021–2023)</p>
+        <p><b>Jumio India Pvt Ltd</b> – Senior HR Executive (2018–2021)</p>
+        <p><b>Goyanka Technologies</b> – HR Executive (2014–2018)</p>
+    </div>
+
+    <!-- Education -->
+    <div id="education" class="card">
+        <h2>Education</h2>
+        <p>MBA / PG in Human Resources (Add your details here)</p>
+        <p>Bachelor’s Degree (Add your details here)</p>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Email: yourmail@example.com</p>
+        <p>Phone: +91-XXXXXXXXXX</p>
+    </div>
+
 </div>
 
+<footer>
+    © 2026 Sourabh Katariya | HR Portfolio
+</footer>
 
-
-<div class="stats">
-<div class="card"><h2>10+</h2><p>Years Experience</p></div>
-<div class="card"><h2>5000+</h2><p>Interviews Conducted</p></div>
-<div class="card"><h2>1000+</h2><p>Hires Managed</p></div>
-<div class="card"><h2>95%+</h2><p>Joining Ratio</p></div>
-<div class="card"><h2>200+</h2><p>Foreign & Indic Language Hires</p></div>
-</div>
-
-
-
-<div class="skills card">
-<h2>Core Skills</h2>
-<span>Talent Acquisition</span>
-<span>HR Operations</span>
-<span>Employee Relations</span>
-<span>Compliance & Audits</span>
-<span>Shared Services</span>
-<span>Workforce Planning</span>
-<span>MIS & Analytics</span>
-<span>Stakeholder Management</span>
-</div>
-
-
-
-<div class="exp card">
-<h2>Professional Experience</h2>
-<p><b>Mahendra Next Wealth</b> – Assistant Deputy Manager HR (2023–Present)</p>
-<p><b>Jumio India Pvt Ltd</b> – Team Leader HR (2021–2023)</p>
-<p><b>Jumio India Pvt Ltd</b> – Senior HR Executive (2018–2021)</p>
-<p><b>Goyanka Technologies</b> – HR Executive / Admin Executive (2014–2018)</p>
-</div>
-</div>
-
-
-
-<footer>© 2026 Sourabh Katariya | HR Portfolio</footer>
 </body>
-</html>"""
-
-
-
-path = "/mnt/data/Sourabh_HR_Portfolio.html"
-Path(path).write_text(html, encoding="utf-8")
-print(path)
+</html>
