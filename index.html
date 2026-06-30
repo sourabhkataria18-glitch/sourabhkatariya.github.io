@@ -11,7 +11,7 @@
 
 <style>
 
-/* RESET */
+/* ================= BASE ================= */
 *{
 margin:0;
 padding:0;
@@ -20,20 +20,24 @@ font-family:Poppins,sans-serif;
 scroll-behavior:smooth;
 }
 
-/* DARK MODE */
+body{
+background:#f7f9fc;
+color:#222;
+transition:0.3s;
+}
+
 body.dark{
 background:#0f172a;
 color:#fff;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 header{
 position:fixed;
 top:0;
 width:100%;
 background:#fff;
-padding:15px 0;
-box-shadow:0 3px 10px rgba(0,0,0,.1);
+box-shadow:0 3px 12px rgba(0,0,0,.1);
 z-index:999;
 }
 
@@ -48,10 +52,11 @@ margin:auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:10px 0;
 }
 
 nav a{
-margin:0 15px;
+margin:0 12px;
 text-decoration:none;
 color:#333;
 font-weight:500;
@@ -61,7 +66,7 @@ body.dark nav a{
 color:#fff;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero{
 padding-top:120px;
 min-height:100vh;
@@ -77,7 +82,7 @@ align-items:center;
 }
 
 .hero h1{
-font-size:45px;
+font-size:48px;
 }
 
 .hero h2{
@@ -93,6 +98,12 @@ color:#fff;
 border-radius:8px;
 text-decoration:none;
 margin-right:10px;
+transition:0.3s;
+}
+
+.btn:hover{
+box-shadow:0 0 15px #0d6efd;
+transform:translateY(-2px);
 }
 
 .btn2{
@@ -101,41 +112,104 @@ color:#0d6efd;
 padding:12px 20px;
 border-radius:8px;
 text-decoration:none;
-display:inline-block;
 }
 
-/* SECTIONS */
-section{
-padding:80px 0;
-text-align:center;
-}
-
+/* ================= SECTION TITLE ================= */
 .section-title{
-font-size:32px;
-margin-bottom:25px;
+text-align:center;
+font-size:34px;
+margin:50px 0 30px;
 color:#0d6efd;
 }
 
-/* SKILLS */
+/* ================= SKILLS ================= */
 .skills{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
-margin-top:20px;
+width:90%;
+margin:auto;
 }
 
 .skill{
-padding:20px;
 background:#fff;
-border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,.1);
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:0.3s;
+}
+
+.skill:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px rgba(13,110,253,.4);
 }
 
 body.dark .skill{
 background:#1e293b;
 }
 
-/* WHATSAPP */
+/* ================= TIMELINE (LINKEDIN STYLE) ================= */
+.timeline{
+position:relative;
+width:90%;
+margin:auto;
+padding-left:30px;
+border-left:3px solid #0d6efd;
+}
+
+.timeline-item{
+margin-bottom:30px;
+position:relative;
+animation:fadeIn 0.6s ease-in-out;
+}
+
+.timeline-item::before{
+content:"";
+position:absolute;
+left:-10px;
+top:5px;
+width:15px;
+height:15px;
+background:#0d6efd;
+border-radius:50%;
+box-shadow:0 0 10px #0d6efd;
+}
+
+.timeline-card{
+background:#fff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:0.3s;
+}
+
+.timeline-card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px rgba(13,110,253,.3);
+}
+
+body.dark .timeline-card{
+background:#1e293b;
+}
+
+.company{
+font-weight:700;
+color:#0d6efd;
+font-size:18px;
+}
+
+.role{
+font-weight:600;
+margin-top:5px;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* ================= WHATSAPP ================= */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -146,55 +220,29 @@ padding:12px 15px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
+box-shadow:0 0 15px rgba(0,0,0,.2);
 }
 
-/* DARK BUTTON */
+/* ================= DARK BUTTON ================= */
 .toggle{
 position:fixed;
 top:90px;
 right:20px;
-padding:10px 15px;
 background:#0d6efd;
 color:#fff;
 border:none;
+padding:10px 15px;
 border-radius:8px;
 cursor:pointer;
 }
 
-/* EXPERIENCE */
-.exp-box{
-background:#fff;
-padding:20px;
-margin:15px auto;
-width:80%;
-border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,.1);
-}
-
-body.dark .exp-box{
-background:#1e293b;
-}
-
-/* EDUCATION */
-.edu-box{
-background:#fff;
-padding:20px;
-margin:15px auto;
-width:80%;
-border-radius:10px;
-box-shadow:0 5px 10px rgba(0,0,0,.1);
-}
-
-body.dark .edu-box{
-background:#1e293b;
-}
-
-/* FOOTER */
+/* ================= FOOTER ================= */
 footer{
 background:#0d6efd;
 color:#fff;
+text-align:center;
 padding:20px;
-margin-top:40px;
+margin-top:50px;
 }
 
 </style>
@@ -214,7 +262,6 @@ margin-top:40px;
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
-<a href="#education">Education</a>
 <a href="#contact">Contact</a>
 </nav>
 </div>
@@ -226,10 +273,11 @@ margin-top:40px;
 
 <div>
 <h1>Sourabh Katariya</h1>
-<h2>HR Professional</h2>
+<h2>Assistant Deputy Manager – HR</h2>
 
 <p>
-9+ years experience in HR Operations, Recruitment, Employee Relations & Compliance.
+HR Professional with 9+ years experience in Recruitment,
+HR Operations, Employee Relations & Compliance.
 </p>
 
 <a href="resume.pdf" class="btn">📄 Download Resume</a>
@@ -243,76 +291,76 @@ margin-top:40px;
 </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-<h2 class="section-title">About Me</h2>
-<p>HR Professional with expertise in recruitment, HR operations, payroll, employee relations and compliance.</p>
-</section>
-
 <!-- SKILLS -->
 <section id="skills">
 <h2 class="section-title">Skills</h2>
 
-<div class="skills container">
+<div class="skills">
 
 <div class="skill">Recruitment</div>
 <div class="skill">HR Operations</div>
 <div class="skill">Employee Relations</div>
 <div class="skill">Payroll</div>
+<div class="skill">Compliance</div>
 
 </div>
 </section>
 
-<!-- EXPERIENCE -->
+<!-- EXPERIENCE TIMELINE -->
 <section id="experience">
+
 <h2 class="section-title">Experience</h2>
 
-<div class="exp-box">
-<b>Senior HR Executive</b><br>
-Jumio India Pvt. Ltd.<br>
-Dec 2018 – Mar 2021
+<div class="timeline">
+
+<!-- MAHENDRA -->
+<div class="timeline-item">
+<div class="timeline-card">
+<div class="company">Mahendra Next Wealth</div>
+<div class="role">Assistant Deputy Manager – HR</div>
+<p>Nov 2023 – Present</p>
+</div>
 </div>
 
-<div class="exp-box">
-<b>HR Executive</b><br>
-Goyanka Technologies Pvt. Ltd.<br>
-Apr 2016 – Nov 2018
+<!-- JUMIO -->
+<div class="timeline-item">
+<div class="timeline-card">
+<div class="company">Jumio India Pvt. Ltd.</div>
+<div class="role">Team Leader – HR</div>
+<p>Mar 2021 – Oct 2023</p>
+
+<div class="role">Senior HR Executive</div>
+<p>Dec 2018 – Mar 2021</p>
+</div>
 </div>
 
-<div class="exp-box">
-<b>Admin Executive</b><br>
-Jan 2014 – Apr 2016
+<!-- GOYANKA -->
+<div class="timeline-item">
+<div class="timeline-card">
+<div class="company">Goyanka Technologies Pvt. Ltd.</div>
+
+<div class="role">HR Executive</div>
+<p>Apr 2016 – Nov 2018</p>
+
+<div class="role">Admin Executive</div>
+<p>Jan 2014 – Apr 2016</p>
+
+<div class="role">Admin Intern</div>
+<p>May 2013 – Dec 2014</p>
+</div>
 </div>
 
-<div class="exp-box">
-<b>Admin Intern</b><br>
-May 2013 – Dec 2014
-</div>
-
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-<h2 class="section-title">Education</h2>
-
-<div class="edu-box">
-<b>Master of Business Administration (HR)</b><br>
-Jaipur National University – 2021
-</div>
-
-<div class="edu-box">
-<b>Bachelor of Business Administration</b><br>
-Jaipur National University – 2017
 </div>
 
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
+
 <h2 class="section-title">Contact</h2>
 
-<p>📧 sourabhkataria18@gmail.com</p>
-<p>📞 8005517896</p>
+<p style="text-align:center;">📧 sourabhkataria18@gmail.com</p>
+<p style="text-align:center;">📞 8005517896</p>
 
 </section>
 
