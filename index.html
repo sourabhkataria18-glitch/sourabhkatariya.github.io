@@ -1,392 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- EDUCATION -->
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<section id="education">
 
-<title>Sourabh Katariya | HR Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-/* ================= BASE ================= */
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Poppins,sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#f7f9fc;
-color:#222;
-transition:0.3s;
-}
-
-body.dark{
-background:#0f172a;
-color:#fff;
-}
-
-/* ================= HEADER ================= */
-header{
-position:fixed;
-top:0;
-width:100%;
-background:#fff;
-box-shadow:0 3px 12px rgba(0,0,0,.1);
-z-index:999;
-}
-
-body.dark header{
-background:#1e293b;
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:10px 0;
-}
-
-nav a{
-margin:0 12px;
-text-decoration:none;
-color:#333;
-font-weight:500;
-}
-
-body.dark nav a{
-color:#fff;
-}
-
-/* ================= HERO ================= */
-.hero{
-padding-top:120px;
-min-height:100vh;
-display:flex;
-align-items:center;
-}
-
-.hero-box{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
-
-.hero h1{
-font-size:48px;
-}
-
-.hero h2{
-color:#0d6efd;
-margin:10px 0;
-}
-
-.btn{
-display:inline-block;
-padding:12px 20px;
-background:#0d6efd;
-color:#fff;
-border-radius:8px;
-text-decoration:none;
-margin-right:10px;
-transition:0.3s;
-}
-
-.btn:hover{
-box-shadow:0 0 15px #0d6efd;
-transform:translateY(-2px);
-}
-
-.btn2{
-border:2px solid #0d6efd;
-color:#0d6efd;
-padding:12px 20px;
-border-radius:8px;
-text-decoration:none;
-}
-
-/* ================= SECTION TITLE ================= */
-.section-title{
-text-align:center;
-font-size:34px;
-margin:50px 0 30px;
-color:#0d6efd;
-}
-
-/* ================= SKILLS ================= */
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-width:90%;
-margin:auto;
-}
-
-.skill{
-background:#fff;
-padding:20px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-transition:0.3s;
-}
-
-.skill:hover{
-transform:translateY(-5px);
-box-shadow:0 0 20px rgba(13,110,253,.4);
-}
-
-body.dark .skill{
-background:#1e293b;
-}
-
-/* ================= TIMELINE (LINKEDIN STYLE) ================= */
-.timeline{
-position:relative;
-width:90%;
-margin:auto;
-padding-left:30px;
-border-left:3px solid #0d6efd;
-}
-
-.timeline-item{
-margin-bottom:30px;
-position:relative;
-animation:fadeIn 0.6s ease-in-out;
-}
-
-.timeline-item::before{
-content:"";
-position:absolute;
-left:-10px;
-top:5px;
-width:15px;
-height:15px;
-background:#0d6efd;
-border-radius:50%;
-box-shadow:0 0 10px #0d6efd;
-}
-
-.timeline-card{
-background:#fff;
-padding:20px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-transition:0.3s;
-}
-
-.timeline-card:hover{
-transform:translateY(-5px);
-box-shadow:0 0 20px rgba(13,110,253,.3);
-}
-
-body.dark .timeline-card{
-background:#1e293b;
-}
-
-.company{
-font-weight:700;
-color:#0d6efd;
-font-size:18px;
-}
-
-.role{
-font-weight:600;
-margin-top:5px;
-}
-
-/* ================= ANIMATION ================= */
-@keyframes fadeIn{
-from{opacity:0; transform:translateY(20px);}
-to{opacity:1; transform:translateY(0);}
-}
-
-/* ================= WHATSAPP ================= */
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:#fff;
-padding:12px 15px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 0 15px rgba(0,0,0,.2);
-}
-
-/* ================= DARK BUTTON ================= */
-.toggle{
-position:fixed;
-top:90px;
-right:20px;
-background:#0d6efd;
-color:#fff;
-border:none;
-padding:10px 15px;
-border-radius:8px;
-cursor:pointer;
-}
-
-/* ================= FOOTER ================= */
-footer{
-background:#0d6efd;
-color:#fff;
-text-align:center;
-padding:20px;
-margin-top:50px;
-}
-
-</style>
-
-</head>
-
-<body>
-
-<!-- DARK TOGGLE -->
-<button class="toggle" onclick="toggleDark()">🌙</button>
-
-<header>
-<div class="container">
-<h2 style="color:#0d6efd;">SK</h2>
-
-<nav>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#education">Education</a>
-<a href="#experience">Experience</a>
-<a href="#contact">Contact</a>
-</nav>
-</div>
-</header>
-
-<img src="Sourbh(1).jpg"
-width="320"
-style="
-width:320px;
-height:320px;
-object-fit:cover;
-border-radius:20px;
-box-shadow:0 15px 35px rgba(0,0,0,.25);
-border:5px solid #0d6efd;
-">
-
-<div>
-<h1>Sourabh Katariya</h1>
-<h2>Assistant Deputy Manager – HR</h2>
-
-<p>
-HR Professional with 9+ years experience in Recruitment,
-HR Operations, Employee Relations & Compliance.
-</p>
-
-<a href="resume.pdf" class="btn">📄 Download Resume</a>
-<a href="#contact" class="btn2">Contact</a>
-</div>
-
-<div>
-<img src="profile.jpg" width="280" style="border-radius:15px;">
-</div>
-
-</div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-<h2 class="section-title">Skills</h2>
-
-<div class="skills">
-
-<div class="skill">Recruitment</div>
-<div class="skill">HR Operations</div>
-<div class="skill">Employee Relations</div>
-<div class="skill">Payroll</div>
-<div class="skill">Compliance</div>
-
-</div>
-</section>
-
-<!-- EXPERIENCE TIMELINE -->
-<section id="experience">
-
-<h2 class="section-title">Experience</h2>
+<h2 class="section-title">Education</h2>
 
 <div class="timeline">
 
-<!-- MAHENDRA -->
 <div class="timeline-item">
+
 <div class="timeline-card">
-<div class="company">Mahendra Next Wealth</div>
-<div class="role">Assistant Deputy Manager – HR</div>
-<p>Nov 2023 – Present</p>
-</div>
+
+<div class="company">
+Master of Business Administration (HR)
 </div>
 
-<!-- JUMIO -->
+<div class="role">
+Jaipur National University
+</div>
+
+<p>2021</p>
+
+</div>
+
+</div>
+
 <div class="timeline-item">
+
 <div class="timeline-card">
-<div class="company">Jumio India Pvt. Ltd.</div>
-<div class="role">Team Leader – HR</div>
-<p>Mar 2021 – Oct 2023</p>
 
-<div class="role">Senior HR Executive</div>
-<p>Dec 2018 – Mar 2021</p>
-</div>
+<div class="company">
+Bachelor of Business Administration
 </div>
 
-<!-- GOYANKA -->
-<div class="timeline-item">
-<div class="timeline-card">
-<div class="company">Goyanka Technologies Pvt. Ltd.</div>
-
-<div class="role">HR Executive</div>
-<p>Apr 2016 – Nov 2018</p>
-
-<div class="role">Admin Executive</div>
-<p>Jan 2014 – Apr 2016</p>
-
-<div class="role">Admin Intern</div>
-<p>May 2013 – Dec 2014</p>
+<div class="role">
+Jaipur National University
 </div>
+
+<p>2017</p>
+
+</div>
+
 </div>
 
 </div>
 
 </section>
-
-<!-- CONTACT -->
-<section id="contact">
-
-<h2 class="section-title">Contact</h2>
-
-<p style="text-align:center;">📧 sourabhkataria18@gmail.com</p>
-<p style="text-align:center;">📞 8005517896</p>
-
-</section>
-
-<!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/918005517896" target="_blank">
-💬 WhatsApp
-</a>
-
-<!-- FOOTER -->
-<footer>
-© 2026 Sourabh Katariya | HR Portfolio
-</footer>
-
-<script>
-function toggleDark(){
-document.body.classList.toggle("dark");
-}
-</script>
-
-</body>
-</html>
