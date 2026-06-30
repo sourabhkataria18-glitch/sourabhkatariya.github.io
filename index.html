@@ -11,6 +11,7 @@
 
 <style>
 
+/* RESET */
 *{
 margin:0;
 padding:0;
@@ -30,6 +31,7 @@ background:#0f172a;
 color:#fff;
 }
 
+/* HEADER */
 header{
 position:fixed;
 top:0;
@@ -64,6 +66,7 @@ body.dark nav a{
 color:#fff;
 }
 
+/* HERO */
 .hero{
 padding-top:120px;
 min-height:100vh;
@@ -95,6 +98,12 @@ color:#fff;
 border-radius:8px;
 text-decoration:none;
 margin-right:10px;
+transition:0.3s;
+}
+
+.btn:hover{
+box-shadow:0 0 15px #0d6efd;
+transform:translateY(-2px);
 }
 
 .btn2{
@@ -105,6 +114,7 @@ border-radius:8px;
 text-decoration:none;
 }
 
+/* SECTIONS */
 section{
 padding:80px 0;
 text-align:center;
@@ -116,6 +126,7 @@ margin-bottom:30px;
 color:#0d6efd;
 }
 
+/* SKILLS */
 .skills{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -129,12 +140,19 @@ background:#fff;
 padding:20px;
 border-radius:12px;
 box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:0.3s;
+}
+
+.skill:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px rgba(13,110,253,.4);
 }
 
 body.dark .skill{
 background:#1e293b;
 }
 
+/* TIMELINE */
 .timeline{
 width:90%;
 margin:auto;
@@ -157,6 +175,7 @@ width:14px;
 height:14px;
 background:#0d6efd;
 border-radius:50%;
+box-shadow:0 0 10px #0d6efd;
 }
 
 .timeline-card{
@@ -164,6 +183,12 @@ background:#fff;
 padding:20px;
 border-radius:12px;
 box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:0.3s;
+}
+
+.timeline-card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px rgba(13,110,253,.3);
 }
 
 body.dark .timeline-card{
@@ -173,6 +198,7 @@ background:#1e293b;
 .company{
 font-weight:700;
 color:#0d6efd;
+font-size:18px;
 }
 
 .role{
@@ -180,6 +206,7 @@ font-weight:600;
 margin-top:8px;
 }
 
+/* WHATSAPP */
 .whatsapp{
 position:fixed;
 bottom:20px;
@@ -189,8 +216,11 @@ color:#fff;
 padding:12px 15px;
 border-radius:50px;
 text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 15px rgba(0,0,0,.2);
 }
 
+/* DARK BUTTON */
 .toggle{
 position:fixed;
 top:90px;
@@ -217,6 +247,7 @@ margin-top:50px;
 
 <body>
 
+<!-- DARK MODE BUTTON -->
 <button class="toggle" onclick="toggleDark()">🌙</button>
 
 <header>
@@ -224,9 +255,9 @@ margin-top:50px;
 <h2 style="color:#0d6efd;">SK</h2>
 
 <nav>
+<a href="#about">About</a>
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
-<a href="#education">Education</a>
 <a href="#contact">Contact</a>
 </nav>
 </div>
@@ -240,16 +271,17 @@ margin-top:50px;
 <h1>Sourabh Katariya</h1>
 <h2>HR Professional</h2>
 
-<p>9+ years experience in HR Operations, Recruitment, Employee Relations & Compliance.</p>
+<p>
+9+ years experience in HR Operations, Recruitment, Employee Relations & Compliance.
+</p>
 
 <a href="resume.pdf" class="btn">📄 Download Resume</a>
 <a href="#contact" class="btn2">Contact</a>
 </div>
 
 <div>
-<img src="profile.jpg"
-alt="Profile"
-style="width:320px;height:320px;object-fit:cover;border-radius:20px;border:5px solid #0d6efd;">
+<!-- FIXED IMAGE PATH -->
+<img src="file:///C:/Users/sourbh.7504/Desktop/CV%20Website/sourbh.jpg" width="280" style="border-radius:15px;">
 </div>
 
 </div>
@@ -260,16 +292,19 @@ style="width:320px;height:320px;object-fit:cover;border-radius:20px;border:5px s
 <h2 class="section-title">Skills</h2>
 
 <div class="skills">
+
 <div class="skill">Recruitment</div>
 <div class="skill">HR Operations</div>
 <div class="skill">Employee Relations</div>
 <div class="skill">Payroll</div>
 <div class="skill">Compliance</div>
+
 </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
+
 <h2 class="section-title">Experience</h2>
 
 <div class="timeline">
@@ -282,42 +317,51 @@ style="width:320px;height:320px;object-fit:cover;border-radius:20px;border:5px s
 </div>
 </div>
 
-</div>
-</section>
-
-<!-- EDUCATION (ADDED) -->
-<section id="education">
-<h2 class="section-title">Education</h2>
-
-<div class="timeline">
-
 <div class="timeline-item">
 <div class="timeline-card">
-<div class="company">MBA (HR)</div>
-<div class="role">Jaipur National University</div>
-<p>2021</p>
+<div class="company">Jumio India Pvt. Ltd.</div>
+
+<div class="role">Team Leader – HR</div>
+<p>Mar 2021 – Oct 2023</p>
+
+<div class="role">Senior HR Executive</div>
+<p>Dec 2018 – Mar 2021</p>
 </div>
 </div>
 
 <div class="timeline-item">
 <div class="timeline-card">
-<div class="company">BBA</div>
-<div class="role">Jaipur National University</div>
-<p>2017</p>
+<div class="company">Goyanka Technologies Pvt. Ltd.</div>
+
+<div class="role">HR Executive</div>
+<p>Apr 2016 – Nov 2018</p>
+
+<div class="role">Admin Executive</div>
+<p>Jan 2014 – Apr 2016</p>
+
+<div class="role">Admin Intern</div>
+<p>May 2013 – Dec 2014</p>
 </div>
 </div>
 
 </div>
+
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
+
 <h2 class="section-title">Contact</h2>
+
 <p>📧 sourabhkataria18@gmail.com</p>
 <p>📞 8005517896</p>
+
 </section>
 
-<a class="whatsapp" href="https://wa.me/918005517896">💬 WhatsApp</a>
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/918005517896" target="_blank">
+💬 WhatsApp
+</a>
 
 <footer>
 © 2026 Sourabh Katariya | HR Portfolio
