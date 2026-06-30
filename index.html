@@ -7,43 +7,208 @@
 
 <title>Sourabh Katariya | HR Portfolio</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    padding:0;
-    background:#f4f6f9;
-    text-align:center;
+background:#f7f9fc;
+color:#222;
+transition:0.3s;
 }
 
-.header{
-    background:#0d6efd;
-    color:white;
-    padding:40px 20px;
+body.dark{
+background:#0f172a;
+color:#fff;
 }
 
-.profile-img{
-    width:200px;
-    height:200px;
-    border-radius:50%;
-    object-fit:cover;
-    border:5px solid white;
-    margin-top:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+header{
+position:fixed;
+top:0;
+width:100%;
+background:#fff;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+z-index:999;
 }
 
-.section{
-    background:white;
-    margin:20px auto;
-    padding:20px;
-    width:80%;
-    border-radius:10px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+body.dark header{
+background:#1e293b;
 }
 
-h2{
-    color:#0d6efd;
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 0;
+}
+
+nav a{
+margin:0 12px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+body.dark nav a{
+color:#fff;
+}
+
+.hero{
+padding-top:120px;
+min-height:100vh;
+display:flex;
+align-items:center;
+}
+
+.hero-box{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.hero h2{
+color:#0d6efd;
+margin:10px 0;
+}
+
+.btn{
+display:inline-block;
+padding:12px 20px;
+background:#0d6efd;
+color:#fff;
+border-radius:8px;
+text-decoration:none;
+margin-right:10px;
+}
+
+.btn2{
+border:2px solid #0d6efd;
+color:#0d6efd;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+}
+
+section{
+padding:80px 0;
+text-align:center;
+}
+
+.section-title{
+font-size:34px;
+margin-bottom:30px;
+color:#0d6efd;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+width:90%;
+margin:auto;
+}
+
+.skill{
+background:#fff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+body.dark .skill{
+background:#1e293b;
+}
+
+.timeline{
+width:90%;
+margin:auto;
+border-left:3px solid #0d6efd;
+padding-left:25px;
+text-align:left;
+}
+
+.timeline-item{
+margin-bottom:25px;
+position:relative;
+}
+
+.timeline-item::before{
+content:"";
+position:absolute;
+left:-32px;
+top:5px;
+width:14px;
+height:14px;
+background:#0d6efd;
+border-radius:50%;
+}
+
+.timeline-card{
+background:#fff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+body.dark .timeline-card{
+background:#1e293b;
+}
+
+.company{
+font-weight:700;
+color:#0d6efd;
+}
+
+.role{
+font-weight:600;
+margin-top:8px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:12px 15px;
+border-radius:50px;
+text-decoration:none;
+}
+
+.toggle{
+position:fixed;
+top:90px;
+right:20px;
+background:#0d6efd;
+color:#fff;
+border:none;
+padding:10px 15px;
+border-radius:8px;
+cursor:pointer;
+}
+
+footer{
+background:#0d6efd;
+color:#fff;
+text-align:center;
+padding:20px;
+margin-top:50px;
 }
 
 </style>
@@ -52,44 +217,117 @@ h2{
 
 <body>
 
-<!-- HEADER -->
-<div class="header">
+<button class="toggle" onclick="toggleDark()">🌙</button>
 
-    <!-- IMAGE (IMPORTANT LINE) -->
-    <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+<header>
+<div class="container">
+<h2 style="color:#0d6efd;">SK</h2>
 
-    <h1>Sourabh Katariya</h1>
-    <p>HR Professional</p>
+<nav>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
 
+<!-- HERO -->
+<section class="hero">
+<div class="container hero-box">
+
+<div>
+<h1>Sourabh Katariya</h1>
+<h2>HR Professional</h2>
+
+<p>9+ years experience in HR Operations, Recruitment, Employee Relations & Compliance.</p>
+
+<a href="resume.pdf" class="btn">📄 Download Resume</a>
+<a href="#contact" class="btn2">Contact</a>
 </div>
 
-<!-- ABOUT -->
-<div class="section">
-    <h2>About</h2>
-    <p>HR Professional with experience in Recruitment, HR Operations, Employee Relations and Compliance.</p>
+<div>
+<img src="profile.jpg"
+alt="Profile"
+style="width:320px;height:320px;object-fit:cover;border-radius:20px;border:5px solid #0d6efd;">
 </div>
+
+</div>
+</section>
 
 <!-- SKILLS -->
-<div class="section">
-    <h2>Skills</h2>
-    <p>Recruitment | HR Operations | Payroll | Compliance | Employee Relations</p>
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+
+<div class="skills">
+<div class="skill">Recruitment</div>
+<div class="skill">HR Operations</div>
+<div class="skill">Employee Relations</div>
+<div class="skill">Payroll</div>
+<div class="skill">Compliance</div>
 </div>
+</section>
 
 <!-- EXPERIENCE -->
-<div class="section">
-    <h2>Experience</h2>
-    <p>Mahendra Next Wealth IT India Pvt Ltd</p>
-    <p>Jumio India Pvt Ltd</p>
+<section id="experience">
+<h2 class="section-title">Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-card">
+<div class="company">Mahendra Next Wealth</div>
+<div class="role">Assistant Deputy Manager – HR</div>
+<p>Nov 2023 – Present</p>
+</div>
 </div>
 
-<!-- CONTACT -->
-<div class="section">
-    <h2>Contact</h2>
-    <p>Email: sourabhkataria18@gmail.com</p>
-    <p>Phone: 8005517896</p>
 </div>
+</section>
+
+<!-- EDUCATION (ADDED) -->
+<section id="education">
+<h2 class="section-title">Education</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-card">
+<div class="company">MBA (HR)</div>
+<div class="role">Jaipur National University</div>
+<p>2021</p>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-card">
+<div class="company">BBA</div>
+<div class="role">Jaipur National University</div>
+<p>2017</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+<p>📧 sourabhkataria18@gmail.com</p>
+<p>📞 8005517896</p>
+</section>
+
+<a class="whatsapp" href="https://wa.me/918005517896">💬 WhatsApp</a>
+
+<footer>
+© 2026 Sourabh Katariya | HR Portfolio
+</footer>
+
+<script>
+function toggleDark(){
+document.body.classList.toggle("dark");
+}
+</script>
 
 </body>
 </html>
-
-is se photo nhi aa rhi kese ayegei ye batao mai apko photo dedu ya to 
