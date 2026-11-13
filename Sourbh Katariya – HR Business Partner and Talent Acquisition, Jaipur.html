@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>Sourbh Katariya – HR Business Partner and Talent Acquisition, Jaipur</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#F5F7F4;--surface:#FFFFFF;--ink:#13262B;--muted:#53676B;--brand:#0F4C4A;--on-brand:#FFFFFF;
+  --accent:#E89B2D;--accent-soft:rgba(232,155,45,.16);--line:rgba(19,38,43,.13);--tint:rgba(15,76,74,.07);
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0C1A1D;--surface:#132528;--ink:#E8EFEC;--muted:#93A8A8;--brand:#5FC4B8;--on-brand:#0C1A1D;
+    --accent:#F2B35A;--accent-soft:rgba(242,179,90,.15);--line:rgba(232,239,236,.15);--tint:rgba(95,196,184,.09);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0C1A1D;--surface:#132528;--ink:#E8EFEC;--muted:#93A8A8;--brand:#5FC4B8;--on-brand:#0C1A1D;
+  --accent:#F2B35A;--accent-soft:rgba(242,179,90,.15);--line:rgba(232,239,236,.15);--tint:rgba(95,196,184,.09);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--ink);font:16px/1.65 'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:'Fraunces',serif;font-weight:700;font-size:1.1rem;text-decoration:none}
+nav{display:flex;align-items:center;gap:26px;font-size:.92rem}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--brand)}
+.toggle{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;font:inherit;font-size:.85rem;cursor:pointer}
+.toggle:hover{border-color:var(--brand)}
+
+/* hero */
+.hero{padding:72px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,5.4vw,4.3rem);margin-bottom:18px}
+.role{font-size:1.15rem;color:var(--brand);font-weight:600;margin-bottom:20px}
+.hero p.lead{color:var(--muted);max-width:56ch;font-size:1.05rem;margin-bottom:30px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;font-size:.93rem;text-decoration:none;border:1.5px solid var(--brand);transition:transform .2s,background .2s}
+.btn.primary{background:var(--brand);color:var(--on-brand)}
+.btn.ghost{color:var(--brand)}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost:hover{background:var(--tint)}
+.btn.wa{background:#1B8F4E;border-color:#1B8F4E;color:#fff}
+.badge{display:inline-flex;align-items:center;gap:8px;margin-bottom:22px;font-size:.88rem;color:var(--muted)}
+.badge i{width:9px;height:9px;border-radius:50%;background:#2FAE6B;box-shadow:0 0 0 4px rgba(47,174,107,.2)}
+
+/* arch portrait (a nod to Jaipur's jharokha windows) */
+.arch{position:relative;max-width:340px;margin-left:auto;width:100%}
+.arch::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:2px solid var(--accent);border-radius:999px 999px 28px 28px}
+.arch img{position:relative;display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top center;border-radius:999px 999px 28px 28px;background:var(--surface)}
+.hero .arch{animation:rise .8s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* numbers */
+.numbers{border-block:1px solid var(--line);background:var(--surface)}
+.numbers .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.num{padding:30px 24px;border-left:1px solid var(--line)}
+.num:first-child{border-left:0;padding-left:0}
+.num b{display:block;font-family:'Fraunces',serif;font-size:2.4rem;line-height:1;color:var(--brand);margin-bottom:8px}
+.num span{font-size:.9rem;color:var(--muted);display:block;max-width:22ch}
+
+/* sections */
+section{padding:84px 0}
+.sec-head{max-width:620px;margin-bottom:44px}
+.sec-head h2{font-size:clamp(1.8rem,3.4vw,2.5rem);margin-bottom:12px}
+.sec-head p{color:var(--muted)}
+
+/* strengths */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px}
+.card h3{font-size:1.25rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem;margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none}
+.chips li{font-size:.82rem;padding:5px 12px;border-radius:999px;background:var(--tint);color:var(--brand);font-weight:500}
+
+/* experience */
+.job{display:grid;grid-template-columns:230px 1fr;gap:40px;padding:36px 0;border-top:1px solid var(--line)}
+.job:last-child{border-bottom:1px solid var(--line)}
+.when{font-weight:600;color:var(--brand)}
+.where{color:var(--muted);font-size:.9rem;margin-top:4px}
+.now{display:inline-block;margin-top:10px;font-size:.78rem;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--ink)}
+.job h3{font-size:1.4rem;margin-bottom:4px}
+.job .co{color:var(--brand);font-weight:600;margin-bottom:16px}
+.job ul{list-style:none;display:grid;gap:10px;max-width:68ch}
+.job li{position:relative;padding-left:22px;color:var(--muted);font-size:.96rem}
+.job li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.job li strong{color:var(--ink);font-weight:600}
+
+/* contact */
+.contact{background:var(--brand);color:var(--on-brand);border-radius:28px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.contact h2{font-size:clamp(1.8rem,3.4vw,2.5rem)}
+.contact p{opacity:.85;margin-top:10px;max-width:40ch}
+.links{display:grid;gap:12px}
+.links a{display:flex;justify-content:space-between;gap:16px;padding:14px 18px;border:1px solid color-mix(in srgb,var(--on-brand) 35%,transparent);border-radius:14px;text-decoration:none;font-weight:500;transition:background .2s}
+.links a:hover{background:color-mix(in srgb,var(--on-brand) 12%,transparent)}
+.links small{opacity:.75;font-weight:400}
+footer{padding:32px 0 48px;color:var(--muted);font-size:.85rem;text-align:center}
+
+.job h4{font:600 .95rem 'Instrument Sans',sans-serif;margin:20px 0 10px;color:var(--ink)}
+.job h3+.co+h4{margin-top:0}
+.two{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.award .date{display:inline-block;font-size:.8rem;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--accent-soft);margin-bottom:12px}
+.card p strong{color:var(--ink)}
+@media(max-width:860px){.two{grid-template-columns:1fr}}
+@media(max-width:860px){
+  .wrap{padding:0 20px}
+  nav a{display:none}
+  .hero{padding:44px 0}
+  .hero .wrap{grid-template-columns:1fr;gap:44px}
+  .arch{margin:0 auto 0 0;max-width:260px}
+  .numbers .wrap{grid-template-columns:1fr 1fr}
+  .num:nth-child(3){border-left:0;padding-left:0}
+  .num:nth-child(n+3){border-top:1px solid var(--line)}
+  .grid,.contact{grid-template-columns:1fr}
+  .job{grid-template-columns:1fr;gap:14px}
+  .contact{padding:36px 26px}
+  section{padding:60px 0}
+}
+@media(prefers-reduced-motion:reduce){.hero .arch{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top">Sourbh Katariya</a>
+    <nav>
+      <a href="#strengths">Strengths</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button class="toggle" id="themeBtn" type="button" aria-label="Switch colour theme">Dark mode</button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <div class="badge"><i></i>Open to new opportunities</div>
+        <h1>Sourbh Katariya</h1>
+        <p class="role">Assistant Deputy Manager – HR Business Partner · Jaipur</p>
+        <p class="lead">I’m a strategic HR business partner and talent acquisition professional with 8+ years across IT, BPO and multinational organisations. I’ve supported business leaders in India, the USA, the UK, Austria, Singapore and Canada with scalable hiring, employee lifecycle management and people operations.</p>
+        <div class="btns">
+          <a class="btn primary" href="tel:+918005517896">Call now</a>
+          <a class="btn wa" href="https://wa.me/918005517896?text=Hi%20Sourbh%2C%20I%20found%20your%20profile%20and%20would%20like%20to%20connect." target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn ghost" href="mailto:sourabhkataria18@gmail.com">Email me</a>
+          <a class="btn ghost" href="https://drive.google.com/file/d/1EFZzthAOGGqdBnAiSMwPGGn8AOp_sbFh/view?usp=sharing" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/sourabh-kataria-4bb9b86b" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="arch"><img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect width='400' height='500' fill='%230F4C4A'/%3E%3Ctext x='200' y='290' font-size='140' text-anchor='middle' fill='%23E89B2D' font-family='Georgia'%3ESK%3C/text%3E%3C/svg%3E" alt="Portrait of Sourbh Katariya"/></div>
+    </div>
+  </div>
+
+  <div class="numbers">
+    <div class="wrap">
+      <div class="num"><b>8+</b><span>years across IT, BPO and multinational firms</span></div>
+      <div class="num"><b>250+</b><span>niche and multilingual hires delivered</span></div>
+      <div class="num"><b>6</b><span>countries supported: India, USA, UK, Austria, Singapore, Canada</span></div>
+      <div class="num"><b>3</b><span>awards for hiring, growth and HR operations</span></div>
+    </div>
+  </div>
+
+  <section id="strengths">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Where I add value</h2>
+        <p>Recognised for high-volume hiring, multilingual recruitment, process improvement and data-driven workforce decisions.</p>
+      </div>
+      <div class="grid">
+        <div class="card"><h3>Talent acquisition</h3><p>End-to-end and bulk hiring across IT, non-IT and language roles.</p>
+          <ul class="chips"><li>End-to-end recruitment</li><li>IT recruitment</li><li>Bulk hiring</li><li>Contract hiring</li><li>Lateral hiring</li><li>Sourcing and screening</li><li>Foreign language hiring</li><li>Indic language hiring</li><li>Workforce planning</li></ul></div>
+        <div class="card"><h3>HRBP and employee relations</h3><p>Trusted support for leaders and employees on people issues.</p>
+          <ul class="chips"><li>HR business partnering</li><li>Stakeholder management</li><li>Grievance handling</li><li>Disciplinary management</li><li>Employee counselling</li><li>Policy implementation</li><li>Attrition management</li><li>Exit management</li></ul></div>
+        <div class="card"><h3>HR operations and compliance</h3><p>Accurate lifecycle operations that stay audit-ready.</p>
+          <ul class="chips"><li>Employee lifecycle</li><li>Onboarding and induction</li><li>HR shared services</li><li>Attendance and leave</li><li>Payroll inputs</li><li>HRIS</li><li>Statutory compliance</li><li>Labour laws</li><li>Internal and external audits</li><li>Background verification</li><li>Vendor management</li></ul></div>
+        <div class="card"><h3>Analytics and culture</h3><p>Dashboards for leaders and programmes that build a better workplace.</p>
+          <ul class="chips"><li>HR MIS and analytics</li><li>HR dashboards</li><li>Employee engagement</li><li>Recognition and wellness</li><li>Process improvement</li><li>Team mentoring</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><h2>Experience</h2></div>
+
+      <article class="job">
+        <div><div class="when">Nov 2023 – Present</div><div class="where">Jaipur, India</div><span class="now">Current role</span></div>
+        <div>
+          <h3>Assistant Deputy Manager – Human Resources</h3>
+          <div class="co">Mahendra NextWealth IT India Pvt Ltd</div>
+          <h4>Talent acquisition and recruitment</h4>
+          <ul>
+            <li>Lead end-to-end recruitment across IT, non-IT, finance, corporate communications and multilingual functions.</li>
+            <li>Partner with business leaders on hiring strategies tied to workforce planning and business needs.</li>
+            <li>Delivered <strong>250+ niche and multilingual hires</strong> across business-critical roles.</li>
+            <li>Manage strategic sourcing, assessment, interview coordination, offers and onboarding.</li>
+            <li>Drive recruitment analytics, hiring TAT and talent acquisition dashboards.</li>
+          </ul>
+          <h4>Employee relations and HR operations</h4>
+          <ul>
+            <li>Drive HRBP initiatives, including employee relations, grievance resolution and performance management support.</li>
+            <li>Manage the employee lifecycle: engagement, onboarding, documentation and exit formalities.</li>
+            <li>Partner with stakeholders to resolve employee concerns and strengthen engagement.</li>
+            <li>Implement HR policies, SOPs and people management practices.</li>
+            <li>Build HR dashboards, workforce reports and MIS for leadership review.</li>
+          </ul>
+          <h4>Payroll and statutory compliance</h4>
+          <ul>
+            <li>Coordinate monthly payroll: salary inputs, attendance, leave and adjustments, reconciled with Finance.</li>
+            <li>Handle PF, ESIC, UAN, IP management, ECR filing and statutory challans.</li>
+            <li>Oversee background verification, employee records and compliance documentation to stay audit-ready.</li>
+            <li>Improve processes and SOP adherence to enhance employee experience.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div><div class="when">Mar 2021 – Oct 2023</div><div class="where">Jaipur, India</div></div>
+        <div>
+          <h3>Team Leader</h3>
+          <div class="co">Jumio India Pvt. Ltd.</div>
+          <ul>
+            <li>Led <strong>Global HR Shared Services (GSS)</strong>: onboarding, induction, lifecycle and exits for international employees.</li>
+            <li>Managed end-to-end HR shared services transactions while meeting SLAs and service-quality standards.</li>
+            <li>Oversaw attendance, payroll inputs, HR administration and records, keeping the function audit-ready.</li>
+            <li>Supported hiring through sourcing, screening and interview coordination for entry-level and lateral roles.</li>
+            <li>Resolved employee queries and grievances and guided employees and managers on HR policy.</li>
+            <li>Prepared HR MIS reports on headcount, attrition, hiring and workforce metrics.</li>
+            <li>Coordinated background verification and vendors, streamlined processes and led engagement initiatives.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <div><div class="when">Dec 2018 – Mar 2021</div></div>
+        <div>
+          <h3>Senior HR Executive</h3>
+          <ul>
+            <li>Managed end-to-end recruitment and bulk hiring for entry-level and lateral positions.</li>
+            <li>Managed the employee lifecycle: onboarding, transfers, confirmations, exits and HR operations.</li>
+            <li>Handled employee relations, grievance resolution and HR policy implementation.</li>
+            <li>Supported HR leadership on strategic initiatives and process improvement.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="recognition" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><h2>Awards and education</h2></div>
+      <div class="two">
+        <div class="card award"><span class="date">Apr 2026</span><h3>Scalability and Agility Award</h3><p>Mahendra NextWealth. For contribution to talent acquisition, business scalability, timely hiring and workforce readiness across multilingual requirements.</p></div>
+        <div class="card award"><span class="date">Jan 2025</span><h3>The Rising Star of the Year</h3><p>Mahendra NextWealth. For consistent growth, ambition and commitment to excellence.</p></div>
+        <div class="card award"><span class="date">2022</span><h3>Star Performance</h3><p>Jumio India. For consistently high-quality HR operations and exceptional performance.</p></div>
+        <div class="card"><h3>Education</h3><p style="margin-bottom:10px"><strong>MBA</strong>, Jaipur National University<br/>2020 – 2022</p><p style="margin:0"><strong>BBA</strong>, Jaipur National University<br/>2015 – 2018</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <h2>Let’s talk about your people goals</h2>
+          <p>Hiring, employee relations or HR operations: send me a note and I’ll reply soon.</p>
+        </div>
+        <div class="links">
+          <a href="mailto:sourabhkataria18@gmail.com"><span>Email</span><small>sourabhkataria18@gmail.com</small></a>
+          <a href="tel:+918005517896"><span>Call</span><small>+91 8005517896</small></a>
+          <a href="https://wa.me/918005517896?text=Hi%20Sourbh%2C%20I%20found%20your%20profile%20and%20would%20like%20to%20connect." target="_blank" rel="noopener"><span>WhatsApp</span><small>Chat now</small></a>
+          <a href="https://www.linkedin.com/in/sourabh-kataria-4bb9b86b" target="_blank" rel="noopener"><span>LinkedIn</span><small>sourabh-kataria</small></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© Sourbh Katariya · Jaipur, Rajasthan, India</footer>
+
+<script>
+(function(){
+  var root=document.documentElement,btn=document.getElementById('themeBtn');
+  var mq=window.matchMedia('(prefers-color-scheme: dark)');
+  function current(){var t=root.getAttribute('data-theme');return t||(mq.matches?'dark':'light');}
+  function label(){btn.textContent=current()==='dark'?'Light mode':'Dark mode';}
+  try{var s=localStorage.getItem('sk-theme');if(s){root.setAttribute('data-theme',s);}}catch(e){}
+  label();
+  btn.addEventListener('click',function(){
+    var next=current()==='dark'?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('sk-theme',next);}catch(e){}
+    label();
+  });
+})();
+</script>
+</body>
+</html>
